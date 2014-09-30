@@ -26,6 +26,7 @@ group :test, :development do
     gem 'launchy'
     gem 'rest_client'
     gem 'dotenv-rails'
+    gem 'letter_opener'
 end
 
 group :test do
