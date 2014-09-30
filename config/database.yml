@@ -1,0 +1,12 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+
+development:
+  <<: *default
+  database: posthub_development
+
+test:
+  <<: *default
+  database: posthub_test
+
