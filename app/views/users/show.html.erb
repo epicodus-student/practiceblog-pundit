@@ -1,1 +1,15 @@
-<h1><%= @user.email %></h1>
+<div class='wrapper'>
+  <h2 id="profile-header">Profile Page for <%= @user.email %></h2>
+<div class="row">
+  <div class="col-sm-6">
+    <h3>Your Posts:</h3>
+    <div id="posts">
+      <ol id="post_list">
+        <%= render @user.posts %>
+      </ol>
+    </div>
+  </div>
+</div>
+
+
+<%= link_to "Add Post", new_post_path, :id => 'new_post', :class => 'btn btn-primary', remote: true %>
